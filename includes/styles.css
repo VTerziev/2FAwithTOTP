@@ -1,0 +1,36 @@
+body{
+	display: grid;
+	grid-template-rows: 100px 25px auto 25px;
+	grid-template-columns: 120px auto;
+	grid-template-areas: "header 	header"
+						 "menu 		menu"
+						 "aside		article"
+						 "footer	footer";
+}
+
+header{
+	grid-area: header;
+	text-align: center;
+}
+
+nav{
+	grid-area: menu;
+	text-align: right;
+	background-color: lightgrey;
+}
+
+footer{
+	grid-area: footer;
+	text-align: center;
+	background-color: lightgrey;
+}
+
+article{
+	grid-area: article;
+	padding: 2px;
+}
+
+aside{
+	grid-area: aside;
+	background-color: lightgrey;
+}
